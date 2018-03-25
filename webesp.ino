@@ -3,7 +3,6 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-
 ESP8266WebServer server(80);
 
 const int ledGreen = 2;
@@ -17,7 +16,6 @@ const int ledRed = 14;
 void setup(void){
   pinMode(ledGreen, OUTPUT); 
   pinMode(ledRed, OUTPUT); 
-  dht.begin();
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
